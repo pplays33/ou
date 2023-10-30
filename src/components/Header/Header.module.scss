@@ -16,4 +16,9 @@
             justify-items: end;
         }
     }
+    @media (max-width: 500px) {
+        .Header{
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
 }

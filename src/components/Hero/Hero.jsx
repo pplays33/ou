@@ -38,11 +38,20 @@ export default function Hero(){
                         variants={h1Variant}
                     > Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</motion.p>
                     
-                    <a 
+                    <motion.a 
+                        initial={'hidden'}
+                        animate={'visible'}
+                        transition={
+                            {
+                                duration: 1.2,
+                                delay: 0.6,
+                            }
+                        }
+                        variants={h1Variant}
                         className={styles.link} 
                         href='https://ou-olive.vercel.app/'>
                             начать общение →
-                    </a>
+                    </motion.a>
                 </div>
             </div>
         </>
