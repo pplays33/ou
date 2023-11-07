@@ -1,8 +1,4 @@
 
-    // background-image: url(./assets/image21.png);
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    // background-position:  center;
 
 .Hero{
     .container{
@@ -11,11 +7,12 @@
 
     }
     &_titels{
-        width: 1160px;
+        width: 1120px;
         height: 120px;
         padding-top: 91px;
         padding-bottom: 90px;
         padding-left: 40px;
+        border: 0px solid #fff;
         background-image: url(./assets/Hero.png);
         background-repeat: no-repeat;
         background-size: cover;
