@@ -1,28 +1,48 @@
 
-.container{
-    max-width: 600px;
-    margin: 0 auto;
-    margin-bottom: 150px;
-    .Hero{
-        text-align: center;
-        h1{
-            margin-bottom: 20px;
-        }
-        p{
-            margin-bottom: 10px;
-        }
-        .link{
-            text-align: center;
-            border-radius: 8px;
-            border: 1px solid #999;
-            // opacity: 0.7;
-            background: linear-gradient(180deg, #D9D9D9 -56.79%, rgba(217, 217, 217, 0.00) 100%);
-            backdrop-filter: blur(55px);
-            color: #3B3B3B;
-            transition: box-shadow 0.3s ease-in-out;
-        }
-        .link:hover{
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        }
+    // background-image: url(./assets/image21.png);
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position:  center;
+
+.Hero{
+    .container{
+        max-width: 1160px;
+        margin: 0 auto;
+
     }
+    &_titels{
+        width: 1160px;
+        height: 120px;
+        padding-top: 91px;
+        padding-bottom: 90px;
+        padding-left: 40px;
+        background-image: url(./assets/Hero.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:  center;
+    }
+}
+
+.item_Breadcrumbs{
+    p{
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+
+}
+
+.item_titel{
+    h2{
+        font-size: 48px;
+        margin-bottom: 15px;
+        font-weight: 700; 
+    }
+
+}
+
+.item_subTitel{
+    p{
+        font-size: 16px;
+    }
+
 }

@@ -1,5 +1,6 @@
 import styles from './Hero.module.scss';
 
+
 import { motion } from "framer-motion"
 
 export default function Hero(){
@@ -12,46 +13,19 @@ export default function Hero(){
 
     return(
         <>
-            <div className={styles.container}>
-                <div className={styles.Hero}>
-                    <motion.h1
-                        initial={'hidden'}
-                        animate={'visible'}
-                        transition={
-                            {
-                                duration: 1,
-                                delay: 0.5,
-                            }
-                        }
-                        variants={h1Variant}
-                    > Наша команда </motion.h1>
-                    
-                    <motion.p
-                        initial={'hidden'}
-                        animate={'visible'}
-                        transition={
-                            {
-                                duration: 1.2,
-                                delay: 0.5,
-                            }
-                        }
-                        variants={h1Variant}
-                    > Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</motion.p>
-                    
-                    <motion.a 
-                        initial={'hidden'}
-                        animate={'visible'}
-                        transition={
-                            {
-                                duration: 1.2,
-                                delay: 0.6,
-                            }
-                        }
-                        variants={h1Variant}
-                        className={styles.link} 
-                        href='https://ou-olive.vercel.app/'>
-                            начать общение →
-                    </motion.a>
+            <div className={styles.Hero}>
+                <div className={styles.container}>
+                    <div className={styles.Hero_titels}>
+                        <div className={styles.item_Breadcrumbs}>
+                            <p> Главная / Все коллекции / Альба / Спальня </p>
+                        </div>
+                        <div className={styles.item_titel}>
+                            <h2>Спальня</h2>
+                        </div>
+                        <div className={styles.item_subTitel}>
+                            <p> Спальня коллекции Альба </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </>

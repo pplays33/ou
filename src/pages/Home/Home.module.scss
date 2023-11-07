@@ -1,19 +1,19 @@
 .container{
 
-    width: 100%;
-    // margin-bottom: 20px;
-    min-height: calc(100vh - 1px);
-    background-image: url(./assets/image21.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position:  center;
-
+    // width: 100%;
+    // // margin-bottom: 20px;
+    // min-height: calc(100vh - 1px);
+    // background-image: url(./assets/image21.png);
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position:  center;
+    color: #000;
 
     .container_content{
-        max-width: 1360px;
+        max-width: 1160px;
         padding: 0 10px;
         margin: 0 auto;
-        color: #3B3B3B;
+        color: #000;
     }
 
 }

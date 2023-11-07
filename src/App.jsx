@@ -5,7 +5,7 @@ import {  Routes, Route } from 'react-router-dom';
 import './App.scss';
 
 import Home from './pages/Home/Home';
-// import ListPage from './pages/ListPage';
+import About from './pages/About/About';
 
 function App() {
 
@@ -14,7 +14,7 @@ function App() {
     <>
       <Routes>
         <Route path='/' element={<Home />} />
-        {/* <Route path='/progect' element={<ListPage />} /> */}
+        <Route path='/About' element={<About />} />
       </Routes>
     </>
   )

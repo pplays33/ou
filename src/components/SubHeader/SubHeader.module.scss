@@ -1,0 +1,146 @@
+%align-colum {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+%align-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+
+
+
+.SubHeader{
+    height: 90;
+    background: var(--Light-grey, #EEE);
+    .container{
+        max-width: 1160px;
+        padding-top: 22px;
+        padding-bottom: 22px;
+        margin: 0 auto;
+        color: #000;
+    }
+    &__row{
+        display: grid;
+        grid-template-columns: 1fr 2fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    }
+}
+
+.item_logo{
+    width: 160px;
+    height: 45px;
+    @extend %align-colum;
+    text-align: center;
+    background: #C4C4C4;
+    &__titel{
+
+    }
+    &__subTitel{
+        font-size: 10px;
+    }
+}
+
+
+
+.item_search{
+    @extend %align-row;
+    width: 560px;
+    height: 45px;
+    text-align: center;
+    &__catalog{
+        @extend %align-row;
+        width: 90px;
+        height: 45px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 6px 0px 0px 6px;
+        background: var(--Black, #000);
+    }
+    &__text{
+        margin-left: 10px;
+        font-size: 16px;
+        color: #fff;
+    }
+    &__field{
+        @extend %align-row;
+    }
+    &__btn{
+        @extend %align-colum;
+        padding-right: 20px;
+        width: 26px;
+        min-height: 45px;
+        border: 0px solid #FFF;
+        border-radius: 0px 6px 6px 0px;
+        background: #FFF;
+
+    }
+    &__input{
+        width: 400px;
+        height: 45px;
+        border: 0px solid #fff;
+        background: #FFF;
+    }
+}
+
+.item_like{
+    @extend %align-colum;
+    &__icon{
+        
+    }
+}
+
+.item_addres{
+    @extend %align-row;
+    &__text{
+        font-size: 16px;
+        margin-right: 5px;
+    }
+    &__icon{
+        
+    }
+}
+
+.item_profil{
+    @extend %align-row;
+    &__text{
+        font-size: 16px;
+        margin-right: 5px;
+    }
+    &__icon{
+        
+    }
+}
+
+.item_shop{
+    // display: grid;
+    // justify-items: end;
+    @extend %align-row;
+    justify-content: end;
+    
+    &__icon{
+        margin-right: 7px;
+    }
+    &__count{
+        position: relative;
+        @extend %align-row;
+        text-align: start;
+        width: 20px;
+        height: 20px;
+        background:#C4C4C4;
+        border-radius: 50%;
+        text-align: center;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        p{
+            position: absolute;
+            top: 10;
+            left: 40%;
+            
+        }
+    }   
+}
