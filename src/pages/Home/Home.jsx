@@ -3,7 +3,7 @@ import styles from './Home.module.scss';
 import Header from '../../components/Header/Header';
 import Hero from '../../components/Hero/Hero';
 import SubHeader from '../../components/SubHeader/SubHeader';
-import Card from '../../components/Card/Card';
+import PhotoAndVideo from '../../components/Card/PhotoAndVideo';
 import Footer from '../../components/Footer/Footer';
 
 export default function Home(){
@@ -13,10 +13,11 @@ export default function Home(){
                 <Header />
                 <SubHeader />
                 <Hero />
+                <PhotoAndVideo />
                 <div className={styles.container_content}>
                     
-                    {/* <Card />
-                    <Footer /> */}
+                    
+                    {/* <Footer /> */}
                 </div>
             </div>
         </>

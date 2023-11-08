@@ -1,13 +1,14 @@
 
 
 .Hero{
+    margin-bottom: 79px;
     .container{
         max-width: 1160px;
         margin: 0 auto;
 
     }
     &_titels{
-        width: 1120px;
+        max-width: 1120px;
         height: 120px;
         padding-top: 91px;
         padding-bottom: 90px;
