@@ -22,29 +22,14 @@
         p{
             font-size: 16px;
             color: #000;
+            line-height: 140%
         }
     }
 }
 
-.swiper_nav_btns{
-    button {
-        width: 60px;
-        height: 50px;
-        border-radius: 50px;
-        border: none;
-        outline: none;
-        background-color: hsl(210, 100%, 50%);
-        color: #fff;
-        margin: 0px 0.5rem;
-        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-        margin-top: 30px;
-        transition: all .5s;
-    }
-    button:hover {
-        background-color: hsl(210, 100%, 40%);
-        cursor: pointer;
-    }
-      
+.swiper-button-next {
+    left: 58% !important;
+    transform: translateX(-58%) !important;
 }
 
 .sliderLine{
@@ -58,9 +43,9 @@
     overflow: hidden;
 
     .item_photo{
-        margin-right: 20px;
+        // margin-right: 20px;
     }
     .item_video{
-        margin-right: 20px;
+        // margin-right: 20px;
     }
 }
