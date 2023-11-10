@@ -1,4 +1,72 @@
 import styles from './CompilationOne.module.scss';
+import nigth from './assets/nightstand.png';
+import add from './assets/add.svg';
+import { useState } from 'react';
+
+import Rating from './RatingCard';
+import CheckBox from './CheckBox';
+
+
+export const CompilationList = ({countItem}) =>{
+    return(
+        <>
+            {
+                [...Array(countItem)].map((item, index) => {
+                    return (<li key={index} className={styles.item_card}>
+                        <div className={styles.card}>
+                            <img src={nigth} alt="img_card" />
+
+                            <div className={styles.card_context}>
+                                <Rating />
+                                <p>Кровать «Триумф»</p>
+                                <h3> 8000₽</h3>
+                                <button type="button" className={styles.btn}>
+                                    В корзину
+                                </button>
+                            </div>
+                        </div>
+                    </li>);
+                })
+            }
+        </>
+    );
+}
+
+export const RowTable = ({count}) => {
+    const [cheked, setChecked] = useState(false);
+    const [chekedArr, setCheckedArr] = useState([]);
+    const isChecked = {color: "#B0B0B0"};
+    return(
+        <>
+            {
+                [...arr].map((item, index) => {
+                    return (
+                        <div key={index} className={styles.item_RowTable} style={chekedArr[index] ? {} : isChecked }>
+                            <div className={styles.colum_one} >
+                                <p> {item} </p>
+                            </div>
+                            <div className={styles.colum_two}>
+                                <p> 8 000 ₽  </p>
+                            </div>
+                            <div className={styles.colum_three}>
+                                <CheckBox setChecked={(onCheck) => {
+                                    setChecked(onCheck);
+                                    const new_chekedArr = [...chekedArr];
+                                    new_chekedArr[index] = onCheck;
+                                    setCheckedArr(new_chekedArr);
+                                    // console.log(...new_chekedArr);
+                                }}/>
+                            </div>
+                        </div>
+                    );
+                })
+            }
+        </>
+    );
+}
+
+
+
 
 export default function CompilationOne(){
     return(
@@ -10,53 +78,33 @@ export default function CompilationOne(){
                     </div>
                     <div className={styles.CompilationOne_row}>
                         <div className={styles.colum_one}>
-                            <div className={styles.item_RowTable}>
-                                <div className={styles.colum_one}>
-                                    <p> Кровать «Триумф» 160 </p>
+                            <RowTable count={7} />
+                            <div className={styles.final_price}>
+                                <div className={styles.line}>
+
                                 </div>
-                                <div className={styles.colum_two}>
-                                    <p> 8 000 ₽  </p>
-                                </div>
-                                <div className={styles.colum_three}>
-                                    <p> check </p>
-                                </div>
-                            </div>
-                            <div className={styles.item_RowTable}>
-                                <div className={styles.colum_one}>
-                                    <p> Кровать «Триумф» 160 </p>
-                                </div>
-                                <div className={styles.colum_two}>
-                                    <p> 8 000 ₽  </p>
-                                </div>
-                                <div className={styles.colum_three}>
-                                    <p> check </p>
-                                </div>
-                            </div>
-                            <div className={styles.item_RowTable}>
-                                <div className={styles.colum_one}>
-                                    <p> Кровать «Триумф» 160 </p>
-                                </div>
-                                <div className={styles.colum_two}>
-                                    <p> 8 000 ₽  </p>
-                                </div>
-                                <div className={styles.colum_three}>
-                                    <p> check </p>
-                                </div>
-                            </div>
-                            <div className={styles.item_RowTable}>
-                                <div className={styles.colum_one}>
-                                    <p> Кровать «Триумф» 160 </p>
-                                </div>
-                                <div className={styles.colum_two}>
-                                    <p> 8 000 ₽  </p>
-                                </div>
-                                <div className={styles.colum_three}>
-                                    <p> check </p>
-                                </div>
+                                <div className={styles.item_RowTable}>
+                                    <div className={styles.colum_one} >
+                                        <p> Итого </p>
+                                    </div>
+                                    <div className={styles.colum_two}>
+                                        <p> 2 000 ₽  </p>
+                                    </div>
+                                </div>    
                             </div>
                         </div>
                         <div className={styles.colum_two}>
-                            <h2> Подборка один </h2>
+                            <div className={styles.compilationList}>
+                                <ul className={styles.list}>
+                                    <CompilationList countItem={3}/>
+                                </ul>
+                                <div className={styles.prev_btn}>
+                                    <p> ← </p>
+                                </div>
+                                <div className={styles.next_btn}>
+                                    <p> → </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -64,3 +112,13 @@ export default function CompilationOne(){
         </>
     );
 }
+
+
+const arr = [
+    "Матрас средний",
+    "Тумба прикроватная",
+    "Шкаф 4-дверный",
+    "Комод",
+    "Зеркало",
+    "Пуф",
+];

@@ -1,7 +1,7 @@
 import styles from './Card.module.scss';
 import { motion } from "framer-motion"
 
-import { Navigation } from 'swiper/modules';
+import {Autoplay, Navigation } from 'swiper/modules';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -38,11 +38,15 @@ export const Slider = () => {
         <>
             <Swiper
                 // install Swiper modules
-                modules={[Navigation]}
+                modules={[Autoplay, Navigation]}
                 spaceBetween={50}
                 slidesPerView={4.5}
                 // centeredSlides={true}
                 // loop={true}
+                autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                }}
                 navigation
                 onSwiper={(swiper) => console.log(swiper)}
                 onSlideChange={() => console.log('slide change')}              
