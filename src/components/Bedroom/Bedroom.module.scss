@@ -1,102 +1,29 @@
-
-.CompilationOne{
-    background: var(--Light-grey, #EEE);
+.Bedroom{
+    padding-top: 80px;
+    padding-bottom: 26px;
     .container{
-        padding-top: 80px;
-        padding-bottom: 80px;
         max-width: 1160px;
         margin: 0 auto;
     }
-    &_titel{
-        margin-bottom: 43px;
-    }
-    &_row{
-        display: grid;
-        grid-template-columns: 1fr 1.5fr;
-    }
-}
-
-.colum_one{
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-    .item_RowTable{
-        width: 418px;
-        margin-bottom: 20px;
-        display: grid;
-        grid-template-columns: 2fr 1fr 0.5fr;
-    }
-    .colum_one{
-        display: grid;
-        justify-self: start;
-        // margin-right: 92px;
-        p{
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal
-        }
-    }
-    .colum_two{
-        // margin-right: 25px;
-        display: grid;
-        justify-self: end;
-        
-        p{
-            font-size: 20px;
-            font-weight: 700;
-            font-style: normal;
-            line-height: normal
-        }
-    }
-    .colum_three{
-        display: grid;
-        justify-self: end;
-    }
-    .line{
-        max-width: 360px;
-        height: 1px;
-        margin-bottom: 20px;
-        background: var(--Black, #000);
-        
-    }
-    .btn_add{
-        width: 339px;
-        height: 45px;
-        padding-right: 91px;
-        flex-shrink: 0;
-        border-radius: 6px;
-        background: var(--Black, #000);
-        background-image: url('./assets/add.svg');
-        background-repeat: no-repeat;
-        background-position: right 0 center;
-        background-position-x: 280px;
-        color: #FFF;
-    }
-
-}
-
-.colum_two{
     .compilationList{
         position: relative;
     }
     .list{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        list-style: none;
-        
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        list-style: none;   
     }
     .item_card{
         max-width: 216px;
-        height: 408px;
+        height: 431px;
         display: grid;
         justify-self: center;
         border-radius: 6px;
-        background: var(--White, #FFF);
+        background: #E0E0E0;
 
     }
     .card{
+        position: relative;
         img{
             width: 216px;
             height: 216px;
@@ -127,7 +54,7 @@
                 flex-shrink: 0;
                 border-radius: 6px;
                 background: var(--Black, #000);
-                background-image: url('./assets/add.svg');
+                background-image: url('../CompilationOne/assets/add.svg');
                 background-repeat: no-repeat;
                 background-position: right 0 center;
                 background-position-x: 150px;
@@ -135,9 +62,36 @@
             }
         }
     }
-
-
 }
+
+.sales{
+    position: absolute;
+    top: 22px;
+    left: 22px;
+    padding: 6px 10px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 4px;
+    background: var(--White, #FFF);
+}
+
+.old_price{
+    position: relative;
+    p{
+        font-size: 13px;
+    }
+    
+    .line{
+        position: absolute;
+        top: 10px;
+        left: 0;
+        width: 56px;
+        height: 1px;
+        background: #000;
+        transform: rotate(-5deg);
+    }
+}
+
 
 .prev_btn{
     position: absolute;

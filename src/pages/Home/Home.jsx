@@ -6,6 +6,10 @@ import SubHeader from '../../components/SubHeader/SubHeader';
 import PhotoAndVideo from '../../components/Card/PhotoAndVideo';
 import CompilationOne from '../../components/CompilationOne/CompilationOne';
 import Footer from '../../components/Footer/Footer';
+import Bedroom from '../../components/bedroom/bedroom';
+import Form from '../../components/form/Form';
+
+
 
 export default function Home(){
     return(
@@ -16,11 +20,14 @@ export default function Home(){
                 <Hero />
                 <PhotoAndVideo />
                 <CompilationOne />
-                <div className={styles.container_content}>
+                <Bedroom />
+                <Form />
+                <Footer />
+                {/* <div className={styles.container_content}>
                     
                     
-                    {/* <Footer /> */}
-                </div>
+                    <Footer />
+                </div> */}
             </div>
         </>
     );

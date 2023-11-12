@@ -90,7 +90,10 @@ export default function CompilationOne(){
                                     <div className={styles.colum_two}>
                                         <p> 2 000 ₽  </p>
                                     </div>
-                                </div>    
+                                </div> 
+                                <button className={styles.btn_add}>
+                                    Добавить товары в корзину
+                                </button>  
                             </div>
                         </div>
                         <div className={styles.colum_two}>

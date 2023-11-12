@@ -1,0 +1,79 @@
+.Form{
+    padding-top: 47px;
+    padding-bottom: 103px;
+    background: var(--Black, #000);
+    .container{
+        max-width: 1160px;
+        margin: 0 auto;
+    }
+    &_titel{
+        width: 467px;
+        color: #FFF;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+    &_subtitel{
+        // width: 400px;
+        margin-bottom: 46px;
+        color: #00D6FF;
+        // font-family: Lato;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 119.5%; /* 19.12px */
+    }
+}
+
+.login{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    .Name{
+        width: 232px;
+        height: 32px;
+        color: #FFF;
+        border: 0px solid #000;
+        background: #000;
+        border-bottom: 1px solid #FFF;
+        background-image: url('./assets/prof.svg');
+        background-repeat: no-repeat;
+        background-position: right 0 center;
+    }
+    .phone{
+        width: 232px;
+        height: 32px;
+        color: #FFF;
+        border: 0px solid #000;
+        background: #000;
+        border-bottom: 1px solid #FFF;
+        background-image: url('./assets/phone.svg');
+        background-repeat: no-repeat;
+        background-position: right 0 center;
+    }
+    .email{
+        width: 232px;
+        height: 32px;
+        color: #FFF;
+        border: 0px solid #000;
+        background: #000;
+        border-bottom: 1px solid #FFF;
+        background-image: url('./assets/email.svg');
+        background-repeat: no-repeat;
+        background-position: right 0 center;
+    }
+    .btn{
+        display: grid;
+        justify-self: end;
+        width: 99px;
+        height: 32px;
+    }
+    .line{
+        width: 232px;
+        height: 1px;
+        flex-shrink: 0;
+    }
+
+
+}

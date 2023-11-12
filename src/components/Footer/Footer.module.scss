@@ -1,4 +1,35 @@
-.container{
-    margin-top: 10px;
-    text-align: center;
+.Footer{
+    background: var(--Black, #000);
+    color: white;
+    padding-bottom: 80px;
+    .container{
+        max-width: 1160px;
+        margin: 0 auto;
+    }
+    &_row{
+        display: grid;
+        grid-template-columns: 1fr 1fr 2fr;
+
+    }
+    a{
+        color: white;
+        margin-bottom: 12px;
+    }
+}
+
+.item_colum{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+.item_columTwo{
+    display: grid;
+    justify-self: end;
+    .context{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: end;
+    }
 }
