@@ -7,7 +7,7 @@ import PhotoAndVideo from '../../components/Card/PhotoAndVideo';
 import CompilationOne from '../../components/CompilationOne/CompilationOne';
 import Footer from '../../components/Footer/Footer';
 import Bedroom from '../../components/Bedroom/Bedroom';
-import Form from '../../components/form/Form';
+import Form from '../../components/Form/Form';
 
 
 
