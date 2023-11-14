@@ -144,7 +144,7 @@
     // }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
     .container{
         max-width: 320px !important;
     }
@@ -153,10 +153,10 @@
         justify-self: center;
     }
     .next_btn{
-        top: 57%;
-        right: 15% !important;
+        display: none;
     }
     .prev_btn{
-        display: none;
+        top: 57%;
+        right: 15% !important;
     }
 }

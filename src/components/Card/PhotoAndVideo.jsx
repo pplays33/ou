@@ -104,12 +104,29 @@ export const Slider = () => {
 
 
 export default function PhotoAndVideo(){
+    const h2Variant = {
+        hidden: {x: -1000, opacity: 0,},
+        visible: {x: 0, opacity: 1,}
+    };
+
     return(
         <>
             <div className={styles.PhotoVideo}>
                 <div className={styles.container}>
                     <div className={styles.PhotoVideo_titels}>
-                        <h2> Фотографии и видео </h2>
+                        <motion.h2
+                            initial={'hidden'}
+                            animate={'visible'}
+                            transition={
+                                {
+                                    duration: 1,
+                                    delay: 0.5,
+                                }
+                            }
+                            variants={h2Variant}
+                        > 
+                            Фотографии и видео 
+                        </motion.h2>
                     </div>
                     <div className={styles.PhotoVideo_slider}>
                         <Slider />

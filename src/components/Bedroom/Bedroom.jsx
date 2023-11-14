@@ -10,7 +10,7 @@ export default function Bedroom() {
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
     const resizeHandler = () => {
-        if (window.innerWidth <= 1200) {
+        if (window.innerWidth <= 1300) {
             setCount(1);  
         } else{
             setCount(5);

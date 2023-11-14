@@ -72,7 +72,7 @@ export default function CompilationOne(){
     const [count, setCount] = useState(5);
 
     const resizeHandler = () => {
-        if (window.innerWidth <= 1200) {
+        if (window.innerWidth <= 1300) {
             setCount(1);  
         } else{
             setCount(3);

@@ -15,19 +15,14 @@ export default function Home(){
     return(
         <>
             <div className={styles.container}>
-                {/* <Header />
-                <SubHeader /> */}
+                <Header />
+                <SubHeader />
                 <Hero />
                 <PhotoAndVideo />
                 <CompilationOne />
                 <Bedroom />
                 <Form />
                 <Footer />
-                {/* <div className={styles.container_content}>
-                    
-                    
-                    <Footer />
-                </div> */}
             </div>
         </>
     );
