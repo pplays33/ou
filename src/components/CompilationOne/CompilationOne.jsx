@@ -1,7 +1,7 @@
 import styles from './CompilationOne.module.scss';
 import nigth from './assets/nightstand.png';
 import add from './assets/add.svg';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import Rating from './RatingCard';
 import CheckBox from './CheckBox';
@@ -69,6 +69,24 @@ export const RowTable = ({count}) => {
 
 
 export default function CompilationOne(){
+    const [count, setCount] = useState(5);
+
+    const resizeHandler = () => {
+        if (window.innerWidth <= 1200) {
+            setCount(1);  
+        } else{
+            setCount(3);
+        }
+        
+    };
+    
+    useEffect(() => {
+        window.addEventListener("resize", resizeHandler);
+        resizeHandler();
+      }, []);
+
+
+
     return(
         <>
             <div className={styles.CompilationOne}>
@@ -99,7 +117,7 @@ export default function CompilationOne(){
                         <div className={styles.colum_two}>
                             <div className={styles.compilationList}>
                                 <ul className={styles.list}>
-                                    <CompilationList countItem={3}/>
+                                    <CompilationList countItem={count}/>
                                 </ul>
                                 <div className={styles.prev_btn}>
                                     <p> ← </p>

@@ -12,6 +12,8 @@ export default function Footer(){
                             <a href="#"> Доставка </a>
                             <a href="#"> Гарантия </a>
                             <a href="#"> Сборка </a>
+                            <h4>Политика конфиденциальности</h4>
+                            <p>2020, МебельХолл. Все права защищены</p>
                         </div>
                         <div className={styles.item_colum}>
                             <a href="#"> Адреса магазинов  </a>
@@ -21,10 +23,12 @@ export default function Footer(){
                         </div>
                         <div className={styles.item_columTwo}>
                             <div className={styles.context}>
-                                <a href="#"> Инстаграм </a>
-                                <a href="#"> Фейсбук </a>
-                                <a href="#"> Вконтакте </a>
-                                <a href="#"> Отзывы </a>
+                                <p> Инстаграм </p>
+                                <p> Фейсбук </p>
+                                <p> Вконтакте </p>
+                                {/* <p href="#"> Отзывы </p> */}
+                                <a href="#">+7 (347) 292-62-52</a>
+                                <a href="#">info@mebelhol.ru </a>
                             </div>
                         </div>
                     </div>

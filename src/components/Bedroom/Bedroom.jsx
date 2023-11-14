@@ -2,15 +2,44 @@ import styles from './Bedroom.module.scss';
 import nigth from '../CompilationOne/assets/nightstand.png';
 import Rating from '../CompilationOne/RatingCard';
 
+import { useEffect, useState } from 'react'; 
+
+
 export default function Bedroom() {
+    const [count, setCount] = useState(5);
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+    const resizeHandler = () => {
+        if (window.innerWidth <= 1200) {
+            setCount(1);  
+        } else{
+            setCount(5);
+        }
+        setWindowWidth(window.innerWidth)
+        console.log(window.innerWidth)
+        
+    };
+    
+    useEffect(() => {
+        window.addEventListener("resize", resizeHandler);
+        resizeHandler();
+        // return () => {
+        //   window.removeEventListener("resize", resizeHandler);
+        // };
+      }, []);
+
+
     return (
         <>
             <div className={styles.Bedroom}>
                 <div className={styles.container}>
                     <div className={styles.compilationList}>
+                        <h1 className={styles.titel}>
+                            Для спальни
+                        </h1>
                         <ul className={styles.list}>
                             {
-                                [...Array(5)].map(()=>{
+                                [...Array(count)].map(()=>{
                                     return (
                                         <li className={styles.item_card}>
                                             <div className={styles.card}>

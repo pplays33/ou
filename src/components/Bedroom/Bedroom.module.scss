@@ -7,6 +7,14 @@
     }
     .compilationList{
         position: relative;
+        .titel{
+            margin-bottom: 30px;
+            color: #000;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
     }
     .list{
         display: grid;
@@ -124,5 +132,31 @@
         position: relative;
         top: 30%;
         left: 0;
+    }
+}
+
+@media (max-width: 1300px) {
+    // .prev_btn{
+    //     display: none;
+    // }
+    // .next_btn{
+    //     display: none;
+    // }
+}
+
+@media (max-width: 1200px) {
+    .container{
+        max-width: 320px !important;
+    }
+    .list{
+        grid-template-columns: 1fr !important;
+        justify-self: center;
+    }
+    .next_btn{
+        top: 57%;
+        right: 15% !important;
+    }
+    .prev_btn{
+        display: none;
     }
 }

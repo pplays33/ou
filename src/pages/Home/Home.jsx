@@ -15,8 +15,8 @@ export default function Home(){
     return(
         <>
             <div className={styles.container}>
-                <Header />
-                <SubHeader />
+                {/* <Header />
+                <SubHeader /> */}
                 <Hero />
                 <PhotoAndVideo />
                 <CompilationOne />

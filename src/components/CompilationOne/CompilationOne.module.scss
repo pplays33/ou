@@ -14,6 +14,11 @@
         display: grid;
         grid-template-columns: 1fr 1.5fr;
     }
+    @media (max-width: 1200px) {
+        &_row{
+            grid-template-columns: 1fr !important;
+        }
+    }
 }
 
 .colum_one{
@@ -171,4 +176,32 @@
         top: 30%;
         left: 0;
     }
+}
+
+
+@media (max-width: 1200px) {
+    .list{
+        margin-top: 20px;
+        grid-template-columns: 1fr !important;
+    }
+    .item_card{
+         margin-top: 20px;
+    }
+    .item_RowTable{
+        width: 319px !important;
+    }
+    .next_btn{
+        top: 52%;
+        right: 25% !important;
+    }
+    .prev_btn{
+        display: none;
+    }
+    .line{
+        max-width: 100px;
+    }
+    .btn_add{
+        width: 319px !important;
+    }
+    
 }

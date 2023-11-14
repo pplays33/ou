@@ -68,6 +68,9 @@
         justify-self: end;
         width: 99px;
         height: 32px;
+        background: #FFF;
+        border: 0px solid #000;
+        border-radius: 2px;
     }
     .line{
         width: 232px;
@@ -76,4 +79,14 @@
     }
 
 
+}
+
+@media (max-width: 1200px) {
+    .login{
+        padding: 5px;
+        grid-template-columns: 1fr;
+    }
+    .Form_titel{
+        width: 290px;
+    }
 }

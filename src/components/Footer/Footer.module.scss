@@ -14,6 +14,23 @@
     a{
         color: white;
         margin-bottom: 12px;
+        text-decoration: underline;
+    }
+    h4{
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+    p{
+        margin-bottom: 10px;
+        opacity: 0.6;
+    }
+    @media (max-width: 760px) {
+        &_row{
+            padding: 5px;
+            display: grid;
+            grid-template-columns: 1fr;
+    
+        }
     }
 }
 
@@ -33,3 +50,4 @@
         align-items: end;
     }
 }
+
